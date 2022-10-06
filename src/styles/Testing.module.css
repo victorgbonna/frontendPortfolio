@@ -1,0 +1,46 @@
+.imageCard{
+    text-align: center;
+}
+.backdrop{
+
+    position: fixed;
+    background: rgba(34, 33, 33, 0.76);
+    inset: 0;
+}
+.cropContainer{
+    position: fixed;
+    inset: 0;
+    bottom: 80px;
+}
+.controls{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+.bgitem{
+    border: 2px solid gold;
+    width: 50%;
+    background: red;
+    height: 400px;
+}
+.bgitem img{
+    width: 100%;
+    display: none;
+    height: 400px !important;
+    margin-bottom: 30px;
+    object-fit: cover;
+    object-position: top;
+    /* object-fit:contain; */
+    
+    /* object-fit: cover;
+      
+    object-position: top;
+    border-radius: 16px; */
+  }
+.controlsupper{
+    text-align: center;
+}
+.slider{
+    width: 50%;
+}

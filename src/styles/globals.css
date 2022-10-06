@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:ital,wght@0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Mulish';
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+}
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  height: 100vh;
+  background-color: rgba(229,231,235,var(--tw-bg-opacity));
+}
+.chatcontainer{
+  display: flex;
+  flex-direction: column;
+  padding-top: 8%;
+  /* justify-content: center; */
+  align-items: center;
+
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor:default;
+}
+
+button:active:disabled,button:active[disabled], 
+button:hover:disabled, button:hover[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc !important;
+  color: #666666;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: lemonchiffon;
+}
+.chatbox{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-end;
+  font-family: 'Poppins';
+  font-size: 13px;
+  border-radius: 20px;
+  background: #c7e3f3;
+  row-gap: 20px;
+  animation: popup 0.3s;
+}
+
+
+.right{
+  align-self: flex-end;
+}
+.type p{
+  width: 0;
+
+}
+.chatcont{
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 8px;
+  opacity: 0;
+  animation: appear forwards;
+}
+/* The typing effect */
+@keyframes appear{
+from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes 
+
+  popup {  
+    0%{
+      transform: scale(0.8);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+.content{
+  border-radius: 5px;
+  color: #FFFFFF;
+  background: #3b5998;
+  padding: 10px;
+}
+.avatar{
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-weight: 600;
+  color: #FFFFFF;
+  /* height: fit-content !important; */
+  background: rgb(49, 114, 122);
+}
+.right .content{
+  background: rgb(49, 114, 122);
+}
+.right .avatar{
+  background: #3b5998;
+}
+/* .typewriter{
+
+} */
+
+.typewriter{
+  /* opacity: 0; */
+}
+/* do the opacity and animation delay on the chat cont */
+
+.typewriter p {
+  overflow: hidden; 
+  border-right: 0.02em solid transparent; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 0.02em;
+  opacity: 0;
+  animation: 
+    typing 2s steps(30, end),
+    blink-caret .75s  step-end;
+  animation-fill-mode: forwards;
+  /* animation-delay: 5s; */
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; opacity:1 }
+  50% { border-color: #FFFFFF; opacity: 1;}
+}
+.a{
+
+  background:  transparent !important;
+}
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 20px;
+  height: 20px;
+  /* background-color: rgba(13, 30, 87, 0.192); */
+  border: 1px solid #5e2a9965;
+  /* border: 5px solid  darken(#5e2a99, 8%); */
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 10s 0.2s ease-in forwards infinite;
+}
+.image{
+  width: 600px;
+  height: 600px;
+}
+  .cube::nth-child(2n) {
+    border-color: lighten(#2d9b52, 10%);
+  }
+  
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  
+  .cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  
+  .cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  
+  .cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);   
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%); 
+    opacity: 0;
+  }
+}
+
+.wrapper {
+  animation: scroll 70s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),rgb(49, 114, 122);
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+/* @media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+} */
+.underAnim{
+  color: #e4490d;
+  /* animation: underline 1.2s infinite; */
+}
+.ethu{
+  font-size: 16px;
+}
+a{
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.hoverButton{
+  cursor: pointer;
+  transition: 2s;
+  
+}
+.hoverButton svg{
+  transition: 0.2s;
+}
+.hoverButton:hover{
+  cursor: pointer;
+  background: #b4d5e744;
+}
+.hoverButton:hover svg{
+  transform: rotate(90deg);
+   
+}
+
+
+.h-screenplus{
+  height: 120vh;
+}
+
+
+/* nav */
+.h-screen-15{
+  height: 10vh;
+}
+
+/* nav ending */
+
+.panels .back{
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  transform: translateY(100%);
+}
+.panels{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.panels .front{
+ position: absolute; 
+ width: 100%;
+ height: 100%;
+ /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+ /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+ /* transform: rotateX(90deg); */
+} 
+.panels:hover .front{
+  animation: twirl 0.3s ease-in forwards;
+}
+.panels:hover .back{
+  animation: twirl 0.2s 0.2s ease-out forwards reverse;
+}
+.f{
+  animation: twirl 0.3s ease-in forwards;
+  /* z-index: -22; */
+  /* display: none !important; */
+  /* opacity: 0; */
+}
+.b{
+  opacity: 1;
+}
+@keyframes twirl{
+  0%{transform: translateY(0%);}
+  /* 100%{transform: translateY(100%);} */
+}
+/* blog */
+.card2 {
+  display: block;
+  top: 0px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.card2:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border-radius: 8px;
+  border: 1px solid #66456e;
+}
+.card2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: transform 0.15s ease-out;
+}
+.card2:hover:before {
+  transform: scale(2.15);
+}
+@media (max-width: 670px) {
+  .cube{
+    width: 20px;
+    height: 20px;
+  }
+
+  .ethu{
+    font-size: 14px;
+    display: none;
+
+  }
+  /* .h-screen-15{
+    height: 20vh;
+  } */
+  .text-semimd{
+    font-size: 16px;
+  }
+  .toggle{
+    overflow: hidden;
+    /* animation: "drop 0.5s ease-in-out";
+    transition: 'all 0.5s ease-in-out'; */
+    max-height: 200px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+  .toggleNone{
+    max-height: 0;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+} 
+
