@@ -10,7 +10,7 @@ export default function Main() {
     <ProjectContextProvider>
     <div className="main relative">
       <Head>
-        <title>Yours Truly: Ogbonna Victor Portfolio</title>
+        <title>Yours Truly: GreyHaired Main</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className='bg-gray' id="home">

@@ -1,5 +1,6 @@
 import {useState, useEffect, useContext} from 'react'
 import { ProjectContext } from '../../contexts/projectContext';
+import Link from 'next/link';
 // import { ProjectContext } from '../contexts/projectContext';
 
 export default function Nav({loggedUser= false}){
@@ -29,13 +30,15 @@ export default function Nav({loggedUser= false}){
          flex justify-end  relative w-full tablet:bg-gray-600
          tablet:justify-start
         '>
-        <ul
+        <ul style={
+                    {alignItems:"center"}
+                }
          className={`${toggle?'toggle':'toggle toggleNone'} onshow tablet:pl-4 tablet:pb-3 tablet:px-2
-          tablet:w-full
+          tablet:w-full 
          flex gap-x-12 tablet:flex-col tablet:space-y-3`}>
             {navLinks.map((links, ind)=>
-                <li className='text-gray-100 hover:text-gray-300
-                cursor-pointer text-lg text-semimd w-fit mt-1'
+                <li  className='text-gray-100 hover:text-gray-300
+                cursor-pointer text-semimd w-fit mt-1'
                 onClick={
                     ()=>{
                         document.querySelector('#'+links.toLowerCase()).scrollIntoView({behavior: "smooth"})
@@ -43,6 +46,15 @@ export default function Nav({loggedUser= false}){
                 } 
                 key={ind}>{links=="About"?"About Me": links}</li>
             )}
+            <li className='text-gray-100 hover:text-gray-300 bg-purple-600 hover:bg-purple-800 p-1 rounded
+                cursor-pointer text-semimd w-fit mt-1 px-3'>
+                <Link href="https://drive.google.com/file/d/1ckN7vGn9zEIsjPELD3fncyoXv4qxQnkC/view">
+                <a target='_blank'>
+                    Check my CV
+                </a>
+                </Link>
+            </li>
+
         </ul>
         </div>
 

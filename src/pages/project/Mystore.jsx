@@ -31,7 +31,7 @@ export default function Main() {
             </Link>
 
         </div>
-        <h3 className="text-3xl pt-10 text-gray-900 text-left mb-10 font-bold tablet:text-2xl tablet:mb-4">MYSTORE</h3>
+        <h3 className="text-3xl pt-10 underAnim text-left mb-10 font-bold tablet:text-2xl tablet:mb-4">MYSTORE</h3>
         <div className="text-gray-300 gap-y-4 gap-x-6 text-md tracking-widest grid grid-cols-2 tablet:grid-cols-1 leading-2 justify-center 
           tablet:text-sm tablet:gap-y-2 tablet:leading-2 tablet:tracking:wider
         ">

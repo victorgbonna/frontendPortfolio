@@ -19,7 +19,7 @@ const blogs=[
     ] 
     return (
         <div className="h-screen py-6 pt-20 bg-gray-700 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
-            <h3 className="text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10 text-gray-900">BLOGS AND NOTES</h3>
+            <h3 className="text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10 underAnim">BLOGS AND NOTES</h3>
             <div className='flex tablet:flex-col text-gray-300 tablet:place-items-center gap-1 gap-x-6 tablet:gap-y-6 tablet:justify-center'>
 
                 {blogs.map((blog,index)=>

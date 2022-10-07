@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
+import { FaLanguage } from 'react-icons/fa'
 
 export default function Project(){
 const projects=[
@@ -41,10 +42,12 @@ const projects=[
             "siteLink":"Portfolio"
         }
     ] 
+
+
     const [activeProj, setActiveProj]= useState(null)
     return (
         <div className="bg-gray-500 py-6 pt-20 bg-gray-600 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
-            <h3 className="text-gray-900 text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10">PROJECTS</h3>
+            <h3 className="underAnim text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10">PROJECTS</h3>
             <div className='text-gray-300 grid grid-cols-3 gap-2 tablet:grid-cols-1 tablet:gap-y-10'>
 
                 {projects.map((project,index)=>
