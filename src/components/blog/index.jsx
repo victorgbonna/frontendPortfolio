@@ -18,9 +18,9 @@ const blogs=[
         }
     ] 
     return (
-        <div className="h-screen py-6 pt-20 bg-gray-700 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
-            <h3 className="text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10 underAnim">BLOGS AND NOTES</h3>
-            <div className='flex tablet:flex-col text-gray-300 tablet:place-items-center gap-1 gap-x-6 tablet:gap-y-6 tablet:justify-center'>
+        <div className="h-screen py-6 pt-20 bg-gray-200 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
+            <h3 className="text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10">BLOGS AND NOTES</h3>
+            <div className='flex tablet:flex-col tablet:place-items-center gap-1 gap-x-6 tablet:gap-y-6 tablet:justify-center'>
 
                 {blogs.map((blog,index)=>
                 <Link href={blog.codeLink} key={index}>
@@ -32,9 +32,9 @@ const blogs=[
                          cursor-pointer'/>
                         <div className=' 
                         py-6 space-y-3 p-2'>
-                            <h4 className='text-gray-300 text-lg'>{blog.title}</h4>
-                            <p className='text-gray-300 text-sm'>{blog.date}</p>
-                            <p className='text-gray-300 text-left text-md'>{blog.description && blog.description.slice(0,150)+'...'}</p>
+                            <h4 className='text-gray-800 text-lg'>{blog.title}</h4>
+                            <p className='text-gray-700 text-sm'>{blog.date}</p>
+                            <p className='text-gray-600 text-left text-md'>{blog.description && blog.description.slice(0,150)+'...'}</p>
                         </div>
                     </a>
                 </Link>

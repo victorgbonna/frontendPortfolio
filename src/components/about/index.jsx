@@ -15,9 +15,9 @@ export default function About(){
       }, []);
     
     return(
-        <div className="h-screen py-6 pt-20 bg-gray-700 px-32 tablet:px-4 tablet:pt-10 tablet:h-screen">
-            <h3 className="text-4xl text-center mb-20 tablet:text-2xl tablet:mb-10 underAnim">ABOUT ME</h3>
-            <div className="wow fadeInUp text-gray-300 gap-y-4 gap-x-6 text-md tracking-widest grid grid-cols-3 tablet:grid-cols-2 leading-10 justify-center 
+        <div className="h-screen py-6 pt-20 bg-gray-200 px-32 tablet:px-4 tablet:pt-10 tablet:h-screen">
+            <h3 className="text-4xl text-center mb-20 tablet:text-2xl tablet:mb-10">ABOUT ME</h3>
+            <div className="wow fadeInUp text-gray-700 gap-y-4 gap-x-6 text-md tracking-widest grid grid-cols-3 tablet:grid-cols-2 leading-10 justify-center 
             tablet:text-sm tablet:gap-y-2 tablet:leading-4 tablet:tracking:wider
             ">
                 <div className='w-full mb-2 tablet:w-full'>

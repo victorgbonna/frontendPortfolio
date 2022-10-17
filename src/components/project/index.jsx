@@ -46,9 +46,9 @@ const projects=[
 
     const [activeProj, setActiveProj]= useState(null)
     return (
-        <div className="bg-gray-500 py-6 pt-20 bg-gray-600 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
-            <h3 className="underAnim text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10">PROJECTS</h3>
-            <div className='text-gray-300 grid grid-cols-3 gap-2 tablet:grid-cols-1 tablet:gap-y-10'>
+        <div className="py-6 pt-20 bg-gray-200 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
+            <h3 className="text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10">PROJECTS</h3>
+            <div className='text-gray-700 grid grid-cols-3 gap-2 tablet:grid-cols-1 tablet:gap-y-10'>
 
                 {projects.map((project,index)=>
                 // <>
@@ -65,13 +65,13 @@ const projects=[
                         className={`front hidden tablet:block tablet:h-full
                          cursor-pointer ${activeProj==project.title?'f':''}`} onClick={activeProj==project.title?null:()=>setActiveProj(project.title)} 
                          loading='lazy'/>
-                        <div className={`back bg-gray-800 
+                        <div className={`back bg-gray-600 
                         p-2 text-center py-6 space-y-3                          
                         ${activeProj==project.title?'b':''}`}>
                             <h4 className='text-gray-300 text-xl tablet:text-lg'>{project.title}</h4>
-                            <p className='mb-2 text-gray-300 p-3 text-left text-md tablet:text-sm'>{project.description}</p>
+                            <p className='mb-2 text-gray-200 p-3 text-left text-md tablet:text-sm'>{project.description}</p>
                             <Link href={'/project/'+project.siteLink}>
-                                <a className='bg-transparent border-2 border-gray-100 rounded-md p-3 px-5 hover:border-green-200 hover:bg-green-600 hover:text-white'>See More</a>
+                                <a className='text-white bg-transparent border-2 border-gray-200 rounded-md p-3 px-5 hover:border-green-200 hover:bg-green-600 hover:text-white'>See More</a>
                             </Link>
                         </div>
                     </div>

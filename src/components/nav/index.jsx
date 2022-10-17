@@ -48,7 +48,7 @@ export default function Nav({loggedUser= false}){
             )}
             <li className='text-gray-100 hover:text-gray-300 bg-purple-600 hover:bg-purple-800 p-1 rounded
                 cursor-pointer text-semimd w-fit mt-1 px-3'>
-                <Link href="https://drive.google.com/file/d/1ckN7vGn9zEIsjPELD3fncyoXv4qxQnkC/view">
+                <Link href="https://drive.google.com/file/d/1ZjzVVBcK1N-PT70y6cAH64-nAqW1BOPA/view">
                 <a target='_blank'>
                     Check my CV
                 </a>

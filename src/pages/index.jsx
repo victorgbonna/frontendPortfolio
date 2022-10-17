@@ -22,7 +22,7 @@ export default function Home({ loggedUser }) {
       
       setTimeout(() => {
         router.push('/main')
-      }, 9500);
+      }, 1100);
       // if(stopTimeout){
       //   clearTimeout(timeout);
       //   router.push('/main')
