@@ -45,8 +45,13 @@ export default function Hero(){
                             <Link href='https://www.linkedin.com/in/victor-ogbonna-5a3113230'>
                             <a className='cursor-pointer' > <FaLinkedin size={30}/></a>
                             </Link>
+                            <Link href='https://hashnode.com/@greyhaired'>
+                                <a className='cursor-pointer'>
+                                    <img src="/svg/hashnode2.svg" alt="hashnode icon"/>
+                                </a>
+                            </Link>
                             <Link href='https://www.kaggle.com/ogbonnachiedo'>
-                            <a className='cursor-pointer'><FaKaggle size={30}/></a>
+                                <a className='cursor-pointer'><FaKaggle size={30}/></a>
                             </Link>
                         </span>
                     </div>

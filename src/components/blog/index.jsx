@@ -4,6 +4,13 @@ import Link from 'next/link'
 export default function Blogs(){
 const blogs=[
         {
+            "title":'Handling pagination with UseReducer',
+            "coverPhoto":"/images/pagination.png",
+            "description":"As I worked on a website project's pagination area, I discovered that I had multiple states and user-defined functions. I decided to look for an alternative because it appeared unkempt and disorganized.",
+            "date":"Oct 22nd 2022",
+            "codeLink":"https://greyhaired.hashnode.dev/handling-pagination-with-usereducer",
+        },
+        {
             "title":'EPL 2020/2021 Statistics',
             "coverPhoto":"/images/epl.jpg",
             "description":"The analysis to be done on the notebook would be of 3 sections- League Analysis, Club Analysis and Individual Analysis. Be sure to hit the upvote button or drop your opinions in the comment section below. Please if you found this interesting, drop your reviews and click the upvotes as i would highly appreciate.",
