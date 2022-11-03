@@ -46,13 +46,13 @@ const projects=[
 
     const [activeProj, setActiveProj]= useState(null)
     return (
-        <div className="py-6 pt-20 bg-gray-200 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
+        <section className="py-6 pt-20 bg-gray-200 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
             <h3 className="text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10">PROJECTS</h3>
             <div className='text-gray-700 grid grid-cols-3 gap-2 tablet:grid-cols-1 tablet:gap-y-10'>
 
                 {projects.map((project,index)=>
                 // <>
-                    <div key={index} style={{borderRadius:8}}  className={`
+                    <article key={index} style={{borderRadius:8}}  className={`
                     wow
                     ${((index+1) % 3)==0?' fadeInRight':((index+1) % 3)==1?' fadeInLeft':' zoomIn'}
                     panels w-full h-80 tablet:h-64 
@@ -74,12 +74,12 @@ const projects=[
                                 <a className='text-white bg-transparent border-2 border-gray-200 rounded-md p-3 px-5 hover:border-green-200 hover:bg-green-600 hover:text-white'>See More</a>
                             </Link>
                         </div>
-                    </div>
+                    </article>
                 // </>
                 )}
 
             </div>
 
-        </div>
+        </section>
     )
 }

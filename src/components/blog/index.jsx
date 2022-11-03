@@ -4,6 +4,13 @@ import Link from 'next/link'
 export default function Blogs(){
 const blogs=[
         {
+            "title":'Creating Modals/Popups with useContext',
+            "coverPhoto":"/images/modal.png",
+            "description":"Modals can be enabled in React by using the 'React createPortal', but for some reason, I was unable to do the same in NextJs. I made the decision to look for a solution.I discovered a technique with useContext that avoided the need for createPortal.",
+            "date":"Oct 30th 2022",
+            "codeLink":"https://greyhaired.hashnode.dev/creating-modalspopups-with-usecontext",
+        },
+        {
             "title":'Handling pagination with UseReducer',
             "coverPhoto":"/images/pagination.png",
             "description":"As I worked on a website project's pagination area, I discovered that I had multiple states and user-defined functions. I decided to look for an alternative because it appeared unkempt and disorganized.",
@@ -25,9 +32,9 @@ const blogs=[
         }
     ] 
     return (
-        <div className="h-screen py-6 pt-20 bg-gray-200 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
+        <div className="py-6 pt-20 bg-gray-200 px-32 tablet:px-4 tablet:pt-10 tablet:h-fit">
             <h3 className="text-4xl text-center mb-10 tablet:text-2xl tablet:mb-10">BLOGS AND NOTES</h3>
-            <div className='flex tablet:flex-col tablet:place-items-center gap-1 gap-x-6 tablet:gap-y-6 tablet:justify-center'>
+            <div className='grid grid-cols-3 tablet:grid-cols-1 tablet:place-items-center gap-1 gap-x-6 tablet:gap-y-6 tablet:justify-center'>
 
                 {blogs.map((blog,index)=>
                 <Link href={blog.codeLink} key={index}>

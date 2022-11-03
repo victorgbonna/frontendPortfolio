@@ -36,14 +36,14 @@ export default function Home({ loggedUser }) {
         <title>Yours Truly: GreyHaired</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className='bg-gray-300 chatcontainer'>
+      <main className='bg-gray-300 chatcontainer'>
         {/* <button className="text-center mb-4 bg-blue-600 p-3 text-gray-200 rounded" onClick={()=>{
           setStopTimeout(true)
         }}>Skip</button> */}
         {targetVal?
             <Convo targetVal={targetVal && targetVal.slice(1,targetVal.length)}/>:null
         }
-      </div>
+      </main>
     </>
   );
 }

@@ -8,16 +8,16 @@ export default function Main() {
   
   return (
     <ProjectContextProvider>
-    <div className="main relative">
-      <Head>
-        <title>Yours Truly: GreyHaired Main</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+    <Head>
+      <title>Yours Truly: GreyHaired Main</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
+    <main className="main relative">
       <div className='bg-gray' id="home">
         <Hero/>
       </div>
       <Parent/>
-    </div>
+    </main>
     </ProjectContextProvider>
     
   );

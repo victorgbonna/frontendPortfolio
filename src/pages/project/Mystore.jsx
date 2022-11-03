@@ -9,8 +9,8 @@ export default function Main() {
         <title>Ogbonna Victor: Project 3</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className='bg-gray-700 py-10 px-20 tablet:px-6' id="project2">
-        <div className="fixed top-10 right-20 tablet:right-4 rounded-md flex justify-end gap-x-4 p-2 w-full">
+      <main className='bg-gray-700 py-10 px-20 tablet:px-6' id="project2">
+        <section className="fixed top-10 right-20 tablet:right-4 rounded-md flex justify-end gap-x-4 p-2 w-full">
           <Link href={'/main'}>
           <a className='flex gap-x-3 hover:bg-blue-500
             rounded-sm p-2 bg-blue-300 border-slate-200 cursor-pointer
@@ -30,19 +30,19 @@ export default function Main() {
             </a>
             </Link>
 
-        </div>
+        </section>
         <h3 className="text-3xl pt-10 underAnim text-left mb-10 font-bold tablet:text-2xl tablet:mb-4">MYSTORE</h3>
-        <div className="text-gray-300 gap-y-4 gap-x-6 text-md tracking-widest grid grid-cols-2 tablet:grid-cols-1 leading-2 justify-center 
+        <section className="text-gray-300 gap-y-4 gap-x-6 text-md tracking-widest grid grid-cols-2 tablet:grid-cols-1 leading-2 justify-center 
           tablet:text-sm tablet:gap-y-2 tablet:leading-2 tablet:tracking:wider
         ">
           <div className='w-full mb-2 tablet:w-full'>
             <p>MyStore is an e-commerce platform built by me. It is a full-stack local project I made using NodeJs, Ejs, VanillaJs, MongoDb and TailwindCss. The project is live at <Link href="https://enigmatic-lowlands-83724.herokuapp.com"><a className="text-blue-500">https://enigmatic-lowlands-83724.herokuapp.com</a></Link>.</p>
           </div>
-        </div>
-        <div className="mt-20 tablet:mt-8">
+        </section>
+        <section className="mt-20 tablet:mt-8">
           <img src="/images/mystore.png" alt="mystorehome" className="tablet:h-80"/>
-        </div>
-        <div className="pt-20 tablet:pt-8 text-gray-300 gap-y-4 gap-x-6 text-md tracking-widest grid grid-cols-2 tablet:grid-cols-1 leading-2 justify-center 
+        </section>
+        <section className="pt-20 tablet:pt-8 text-gray-300 gap-y-4 gap-x-6 text-md tracking-widest grid grid-cols-2 tablet:grid-cols-1 leading-2 justify-center 
           tablet:text-sm tablet:gap-y-2 tablet:leading-2 tablet:tracking:wider
         ">
           <div className='w-10/12 mb-2 tablet:w-full'>
@@ -72,16 +72,16 @@ export default function Main() {
             </ul>
             
           </div>
-        </div>
-        <div className="pt-20 tablet:pt-8 text-gray-300 gap-y-4 gap-x-6 grid grid-cols-2 tablet:grid-cols-1 justify-center 
+        </section>
+        <section className="pt-20 tablet:pt-8 text-gray-300 gap-y-4 gap-x-6 grid grid-cols-2 tablet:grid-cols-1 justify-center 
         ">
             {[0,1,2,3].map((index)=>
               <div key={index}>
                 <img src={`/images/mystorepic${index}.png`} className="shadow-lg" alt={`projectpic${index}`} />
               </div>
             )}
-        </div>
-        <div className="pt-20 tablet:pt-8 text-gray-300 gap-y-4 gap-x-6 text-md tracking-widest grid grid-cols-2 tablet:grid-cols-1 leading-2 justify-center 
+        </section>
+        <section className="pt-20 tablet:pt-8 text-gray-300 gap-y-4 gap-x-6 text-md tracking-widest grid grid-cols-2 tablet:grid-cols-1 leading-2 justify-center 
           tablet:text-sm tablet:gap-y-2 tablet:leading-2 tablet:tracking:wider
         ">
           <div className='w-10/12 mb-2 tablet:w-full mt-20 tablet:mt-8'>
@@ -98,8 +98,8 @@ export default function Main() {
             Deploying my first project gave me the confidence that I needed. After doing this, I started applying for jobs and taking part in tasks, knowing fully well that I could deliver.
             </p>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 }
