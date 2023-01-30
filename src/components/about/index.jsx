@@ -27,14 +27,15 @@ export default function About(){
                 <div className='w-full mb-2 tablet:w-full'>
                     <p>With over six years of learning and contributing in workplaces, I have gathered knowledge in numerous languages and frameworks such as - ReactJs, NextJs, Javascript, HTML, CSS, TailwindCss, NodeJs, MongoDB, Python and some  Machine Learning Libraries.</p>
                 </div>
+                <div data-wow-delay=".9s" className='wow fadeIn w-full mb-2 tablet:w-full'>
+                    <p>
+                        I do experiences in creating realtime chat applications using <span className="text-purple-600">SocketIo</span>, storing data in a primary memory and cache with  <span className="text-purple-600">Redis</span>, enabling payment integrations with Paystack, Flutterwave and Paypal. 
+                        I also do prefer 
+                        <span className="text-purple-600">React UseQuery</span> than 
+                        <span className="text-purple-600">UseEffect</span> when interacting with APIs.
+                    </p>               
+                </div>
                 
-                {additionalText &&
-                    <div data-wow-delay=".9s" className='wow fadeIn w-full mb-2 tablet:w-full'>
-                        <p>
-                            I hope to be given the opportunity to work, contribute and learn at <span className="text-purple-500 font-bold">{additionalText.slice(1, additionalText.length)}</span> 
-                        </p>               
-                    </div>
-                }
             </div>
             
         </div>
