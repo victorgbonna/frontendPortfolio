@@ -25,7 +25,9 @@ export default function About(){
                     <p>Ever seen someone who finds a way to contribute to the advancement of the technology space and is eager, willing and passionate to learn more? That person is me.</p>
                 </div>
                 <div className='w-full mb-2 tablet:w-full'>
-                    <p>With over six years of learning and contributing in workplaces, I have gathered knowledge in numerous languages and frameworks such as - ReactJs, NextJs, Javascript, HTML, CSS, TailwindCss, NodeJs, MongoDB, Python and some  Machine Learning Libraries.</p>
+                    <p>With over six years of learning and contributing in workplaces, I have gathered knowledge in numerous languages and frameworks such as - <span className="text-purple-600"> ReactJs</span>, <span className="text-purple-600">NextJs</span>, 
+                    <span className="text-purple-600">Javascript</span>
+                    , <Span title="HTML"/>, <Span title="CSS"/>, <Span title="TailwindCss"/>, <Span title="NodeJs"/>, <Span title="MongoDB"/>, <Span title="Python"/> and some  Machine Learning Libraries.</p>
                 </div>
                 <div data-wow-delay=".9s" className='wow fadeIn w-full mb-2 tablet:w-full'>
                     <p>
@@ -37,5 +39,10 @@ export default function About(){
             </div>
             
         </div>
+    )
+}
+function Span({title}){
+    return(
+        <span className="text-purple-600">{title}</span>
     )
 }
