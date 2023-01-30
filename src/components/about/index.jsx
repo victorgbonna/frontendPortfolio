@@ -30,9 +30,7 @@ export default function About(){
                 <div data-wow-delay=".9s" className='wow fadeIn w-full mb-2 tablet:w-full'>
                     <p>
                         I do experiences in creating realtime chat applications using <span className="text-purple-600">SocketIo</span>, storing data in a primary memory and cache with  <span className="text-purple-600">Redis</span>, enabling payment integrations with Paystack, Flutterwave and Paypal. 
-                        I also do prefer 
-                        <span className="text-purple-600">React UseQuery</span> than 
-                        <span className="text-purple-600">UseEffect</span> when interacting with APIs.
+                        I also do prefer <span className="text-purple-600">React UseQuery</span> than <span className="text-purple-600">UseEffect</span> when interacting with APIs.
                     </p>               
                 </div>
                 
