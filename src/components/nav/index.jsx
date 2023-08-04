@@ -46,14 +46,14 @@ export default function Nav({loggedUser= false}){
                 } 
                 key={ind}>{links=="About"?"About Me": links}</li>
             )}
-            {/* <li className='text-gray-100 hover:text-gray-300 bg-purple-600 hover:bg-purple-800 p-1 rounded
+            <li className='text-gray-100 hover:text-gray-300 bg-purple-600 hover:bg-purple-800 p-1 rounded
                 cursor-pointer text-semimd w-fit mt-1 px-3'>
                 <Link href="https://docs.google.com/document/d/1en8Vn72bYTIUhCErzso9aOVFdCIudlPbVK_8HworPro/edit?usp=sharing">
                 <a target='_blank'>
                     Check my CV
                 </a>
                 </Link>
-            </li> */}
+            </li>
 
         </ul>
         </div>
