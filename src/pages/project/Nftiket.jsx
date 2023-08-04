@@ -36,7 +36,7 @@ export default function Main() {
           tablet:text-sm tablet:gap-y-2 tablet:leading-2 tablet:tracking:wider
         ">
           <div className='w-full mb-2 tablet:w-full'>
-            <p>Nftiket is a web3 platform built by my team. I was not the major contributor to this project's client-side aspect, but I started the project and I always came through when there were bugs. It is currently live at <Link href="https://nftikets.io/."><a className="text-blue-500">https://nftikets.io</a></Link>.</p>
+            <p>Nftiket is a web3 platform built by my team. I was not the major contributor to this project&#39;s client-side aspect, but I started the project and I always came through when there were bugs. It is currently live at <Link href="https://nftikets.io/."><a className="text-blue-500">https://nftikets.io</a></Link>.</p>
           </div>
         </section>
         <section className="mt-20 tablet:mt-8">
