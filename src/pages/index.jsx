@@ -8,7 +8,7 @@ export default function Main() {
   return (
     <ProjectContextProvider>
     <Head>
-      <title>Victor Ogbonna: Web Developer</title>
+      <title>Victor Ogbonna | Website Developer</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="Creating websites that are useful to you. Get a site you love with my web services."/>
     </Head>
