@@ -13,7 +13,7 @@ export default function Parent(){
     return (
         <>
         <Nav/>
-        <div id="about">
+        <div id="about" className=''>
             <About/>
             {/* <AboutMe/> */}
         </div>
