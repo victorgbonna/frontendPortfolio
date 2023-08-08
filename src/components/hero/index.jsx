@@ -34,8 +34,8 @@ export default function Hero(){
                     </div>
                     <div className=' text-2xl space-y-4 tablet:text-lg tablet:space-y-1'>
                         <div data-wow-iteration="1" data-wow-delay=".6s"  className='wow zoomIn  flex row-gap-2 '>
-                            <h5 className='text-center tablet:hidden'>A Fullstack Web Developer at work<span className='ethu'>; A Tech Enthusiast at heart</span></h5>
-                            <h5 className='hidden tablet:text-left tablet:block'>A Fullstack Web Developer and more<span className='ethu'>; A Tech Enthusiast at heart</span></h5>
+                            <h2 className='text-center tablet:hidden'>Your Vision, My Code: Creating Perfect Websites.</h2>
+                            <h2 className='hidden tablet:text-left tablet:block'>Your Vision, My Code: Creating Perfect Websites.</h2>
                         </div>
                         
                         <span className='flex space-x-4 justify-center wow zoomIn' data-wow-iteration="1" data-wow-delay=".8s">
