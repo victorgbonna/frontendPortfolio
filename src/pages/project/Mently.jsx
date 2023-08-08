@@ -6,7 +6,7 @@ export default function Main() {
   return (
     <div className="main">
       <Head>
-        <title>GreyHaired: Project 1</title>
+        <title>Victor Ogbonna Projects: Project 1</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className=' bg-gray-700  py-10 px-20 tablet:px-6' id="project1">
