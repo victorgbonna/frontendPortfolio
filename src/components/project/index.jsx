@@ -3,28 +3,28 @@ import Link from 'next/link'
 import { FaLanguage } from 'react-icons/fa'
 
 export default function Project(){
-const projects=[
+    const projects=[
         {
-            "title":'MyMently Platform (client project)',
+            "title":'Online Learning Platform',
             "stack":["Frontend"],
             "coverPhoto":"./images/mymently.png",
             "skillsets":["HTML", "CSS","JavaScript", "NextJs"],
-            "description":"Mently (beta phase) provides a way to connect and meet one-on-one with mentors from trusted organizations. I was the frontend lead for this project and I contributed much to the client-side development of this web application.",
+            "description":"Mently provides a way to connect and meet one-on-one with mentors from trusted organizations. I was the frontend lead for this project and I contributed much to the client-side development of this web application.",
             "codeLink":"https://github.com/victorgbonna/mently-client",
             "siteLink":"Mently"
         },
         {
-            "title":'Nfticket (client project)',
+            "title":'Online Web3 Ticket Sale',
             "stack":["Frontend"],
             "coverPhoto":"./images/nfticket.png",
             "skillsets":["HTML", "CSS","JavaScript", "NextJs", "Web 3"],
-            "description":"NFticket (beta phase) is a web 3 product, designed to enable users purchase tickets and create events in the blockchain. I supervised this and made corrections when needed, but I was not the major frontend contributor.",
+            "description":"NFticket is a web 3 product, designed to enable users purchase tickets and create events in the blockchain. I supervised this and made corrections when needed, but I was not the major frontend contributor.",
             "extra":"While working at Next Gen Labs, We built a web 3 platform called nfticket. ",
             "codeLink":"https://github.com/noblejos/Nfticket",
             "siteLink":"Nftiket"
         },
         {
-            "title":'Ecommerce Web Application',
+            "title":'Online E-commerce Store',
             "stack":["Frontend", "API/Backend"],
             "coverPhoto":"./images/mystore.png",
             "skillsets":["HTML", "CSS","TailwindCss", "JavaScript", "Express","NodeJs", "MongoDb"],
@@ -71,7 +71,7 @@ const projects=[
                             <h4 className='text-gray-300 text-xl tablet:text-lg'>{project.title}</h4>
                             <p className='mb-2 text-gray-200 p-3 text-left text-md tablet:text-sm'>{project.description}</p>
                             <Link href={'/project/'+project.siteLink}>
-                                <a className='text-white bg-transparent border-2 border-gray-200 rounded-md p-3 px-5 hover:border-green-200 hover:bg-green-600 hover:text-white'>See More</a>
+                                <a target='_blank' className='text-white bg-transparent border-2 border-gray-200 rounded-md p-3 px-5 hover:border-green-200 hover:bg-green-600 hover:text-white'>See More</a>
                             </Link>
                         </div>
                     </article>

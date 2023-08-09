@@ -24,7 +24,7 @@ export default function Hero(){
         '>
             {/* <div className='grid grid-cols-2 place-items-center'> */}
                 <div className='p-3 justify-self-center bg-gray-600 '>
-                    <img src="/images/mypic.jpg" alt="GreyHaired" className=" rounded-l-lg w-96 tablet:w-60 wow fadeIn" loading='lazy'
+                    <img src="/images/mypic.jpg" alt="A Picture of Victor Ogbonna" className=" rounded-l-lg w-96 tablet:w-60 wow fadeIn" loading='lazy'
                      data-wow-iteration="1" data-wow-offset="80" data-wow-delay=".5s"/>
                 </div>
                 <div className='space-y-5 tablet:space-y-3 
@@ -39,19 +39,19 @@ export default function Hero(){
                         </div>
                         
                         <span className='flex space-x-4 justify-center wow zoomIn' data-wow-iteration="1" data-wow-delay=".8s">
-                            <Link  href="https://github.com/victorgbonna">
-                            <a className='cursor-pointer'><FaGithub size={30}/></a>
+                            <Link href="https://github.com/victorgbonna">
+                                <a target='_blank' className='cursor-pointer'><FaGithub size={30}/></a>
                             </Link>
                             <Link href='https://www.linkedin.com/in/victor-ogbonna-5a3113230'>
-                            <a className='cursor-pointer' > <FaLinkedin size={30}/></a>
+                                <a target='_blank' className='cursor-pointer' > <FaLinkedin size={30}/></a>
                             </Link>
                             <Link href='https://hashnode.com/@greyhaired'>
-                                <a className='cursor-pointer'>
+                                <a target='_blank' className='cursor-pointer'>
                                     <img src="/svg/hashnode2.svg" alt="hashnode icon"/>
                                 </a>
                             </Link>
                             <Link href='https://www.kaggle.com/ogbonnachiedo'>
-                                <a className='cursor-pointer'><FaKaggle size={30}/></a>
+                                <a target='_blank' className='cursor-pointer'><FaKaggle size={30}/></a>
                             </Link>
                         </span>
                     </div>

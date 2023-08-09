@@ -1,17 +1,33 @@
 import Head from "next/head";
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import SchemaMarkupHolder from "../../components/schemaMarkupHolder";
 
-export default function Main() {
+export default function Project3() {
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Online E-commerce Store",
+    "description": "This is an E-commerce app where only the admin user can post products while a customer orders.",
+    "author": {
+      "@type": "Person",
+      "name": "Victor Ogbonna"
+    },
+
+    "datePublished": "2022-10-07",
+    "image": "https://www.greyhaired.dev/images/mystore.png"
+  };
   return (
     <div className="main">
       <Head>
-      <title>Victor Ogbonna Projects: Project 2</title>
+        <title>Victor Ogbonna Works | E-commerce Store</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="This is an E-commerce app where only the admin user can post products while a customer orders."/>
       </Head>
+      <SchemaMarkupHolder page={'project-3'} schema={schema}/>
       <main className='bg-gray-700 py-10 px-20 tablet:px-6' id="project2">
         <section className="fixed top-10 right-20 tablet:right-4 rounded-md flex justify-end gap-x-4 p-2 w-full">
-          <Link href={'/main'}>
+          <Link href={'/'}>
           <a className='flex gap-x-3 hover:bg-blue-500
             rounded-sm p-2 bg-blue-300 border-slate-200 cursor-pointer
             tablet:p-2
