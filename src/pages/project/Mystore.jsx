@@ -23,8 +23,8 @@ export default function Project3() {
         <title>Victor Ogbonna Works | E-commerce Store</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="This is an E-commerce app where only the admin user can post products while a customer orders."/>
+        <SchemaMarkupHolder page={'project-3'} schema={schema}/>
       </Head>
-      <SchemaMarkupHolder page={'project-3'} schema={schema}/>
       <main className='bg-gray-700 py-10 px-20 tablet:px-6' id="project2">
         <section className="fixed top-10 right-20 tablet:right-4 rounded-md flex justify-end gap-x-4 p-2 w-full">
           <Link href={'/'}>

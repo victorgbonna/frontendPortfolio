@@ -45,9 +45,9 @@ export default function Main() {
       <title>Victor Ogbonna | Website Developer</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="Creating websites that are useful to you. Get a site you love with my web services."/>
+      <SchemaMarkupHolder page={'home'} schema={home_schema}/>
     </Head>
     <main className="main relative">
-      <SchemaMarkupHolder page={'home'} schema={home_schema}/>
       <div className='bg-gray' id="home">
         <Hero/>
       </div>

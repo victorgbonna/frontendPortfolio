@@ -42,13 +42,12 @@ export default function SchemaMarkupHolder({schema, page}){
     ]
     // Add additional properties as needed for individual projects, images, etc.
   };
-
   return (
-    <Head>
-      <Script id={'schema-for-'+page} type="application/ld+json">
-        {JSON.stringify(schema)}
-      </Script>
-    </Head>
+    // <Head>
+      <script id={'schema-for-'+page} type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    // </Head>
   );
 };
 

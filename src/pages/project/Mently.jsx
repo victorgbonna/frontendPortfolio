@@ -23,8 +23,8 @@ export default function Project1() {
         <title>Victor Ogbonna Works | EduTech Platform</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="This project provides a way to connect and meet one-on-one with mentors from trusted organizations."/>
+        <SchemaMarkupHolder page={'project-1'} schema={schema}/>
       </Head>
-      <SchemaMarkupHolder page={'project-1'} schema={schema}/>
       <main className=' bg-gray-700  py-10 px-20 tablet:px-6' id="project1">
         <section className="fixed top-10 right-20 tablet:right-4 rounded-md flex justify-end gap-x-4 p-2 w-full">
           <Link href={'/'}>

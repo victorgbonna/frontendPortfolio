@@ -20,11 +20,11 @@ export default function Project4() {
   return (
     <div className="main">
       <Head>
-      <title>Victor Ogbonna Works | Portfolio</title>
+        <title>Victor Ogbonna Works | Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="After receiving no callback when submitting my portfolio to numerous jobs, I decided to modify it. I did some research: watching videos and reading articles, to come up with this site."/>
+        <SchemaMarkupHolder page={'project-4'} schema={schema}/>
       </Head>
-      <SchemaMarkupHolder page={'project-4'} schema={schema}/>
 
       <main className='bg-gray-700 py-10 px-20 tablet:px-6' id="project3">
         <section className="fixed top-10 right-20 tablet:right-4 rounded-md flex justify-end gap-x-4 p-2 w-full">
