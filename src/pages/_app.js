@@ -10,14 +10,14 @@ function MyApp({ Component, pageProps }) {
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
         {/* <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link> */}
       </Head>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-TM98X96286" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=AW-784144131" />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'G-TM98X96286');
+          gtag('config', 'AW-784144131');
         `}
       </Script>
       {/* <!-- Google tag (gtag.js) -->
