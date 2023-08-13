@@ -30,7 +30,11 @@ export default function Hero(){
                 <div className='space-y-5 tablet:space-y-3 
                 justify-self-start tablet:justify-self-center'>
                     <div>
-                        <h3 data-wow-iteration="1" data-wow-delay=".3s" className='wow bounce font-body text-5xl tablet:mt-5 tablet:text-2xl text-center tablet:text-2xl'>Hello, I am <span className='underAnim'>Ogbonna Victor</span></h3>
+                        <h3 data-wow-iteration="1" data-wow-delay=".3s" className='wow bounce font-body text-5xl tablet:mt-5 tablet:text-2xl text-center tablet:text-2xl'>Hello, I am 
+                        <Link href={'/form-success'}>
+                            <span className='underAnim'> Ogbonna Victor</span>
+                        </Link>
+                        </h3>
                     </div>
                     <div className=' text-2xl space-y-4 tablet:text-lg tablet:space-y-1'>
                         <div data-wow-iteration="1" data-wow-delay=".6s"  className='wow zoomIn  flex row-gap-2 '>
