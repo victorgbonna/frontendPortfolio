@@ -10,10 +10,7 @@ import Script from 'next/script'
 // 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 // })(window,document,'script','dataLayer','GTM-5MHGKBZV');</script>
 // <!-- End Google Tag Manager -->
-// <!-- Google Tag Manager (noscript) -->
-// <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MHGKBZV"
-// height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-// <!-- End Google Tag Manager (noscript) -->
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -29,6 +26,23 @@ function MyApp({ Component, pageProps }) {
           gtag('js', new Date());
  
           gtag('config', 'AW-784144131');
+        `}
+      </Script>
+      <Script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm':i,'id': '5MHGKBZV', 'anonymizeIp': true});var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(d.getElementById(i)){return;}js=d.createElement(s);js.id=i;js.src=p+'://www.googletagmanager.com/gtm.js?id='+i+'';fjs.parentNode.insertBefore(js,fjs);})(window,document,'script','dataLayer','GTM-5MHGKBZV');
+            `,
+          }}
+        />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-TM98X96286" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-TM98X96286');
         `}
       </Script>
       {/* <!-- Google tag (gtag.js) -->
