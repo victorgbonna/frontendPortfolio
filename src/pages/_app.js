@@ -45,6 +45,9 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-TM98X96286');
         `}
       </Script>
+      <Script id="convertful-api" src="https://app.convertful.com/Convertful.js?owner=73625" async/>
+
+      
       {/* <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM98X96286"></script>
       <script>
