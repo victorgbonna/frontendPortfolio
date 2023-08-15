@@ -16,7 +16,15 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
-      <Script id="convertful-api" src="https://app.convertful.com/Convertful.js?owner=73625" async/>
+      <Script src="https://app.convertful.com/Convertful.js?owner=73625" async/>
+      <script id="convertful-api" src="https://app.convertful.com/Convertful.js?owner=73625" async></script>
+      {/* <Script id="convertful-api"
+        dangerouslySetInnerHTML={{
+          __html: `
+            // Your Convertful script tag code goes here
+          `
+        }}
+      /> */}
 
         {/* <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link> */}
       <Script src="https://www.googletagmanager.com/gtag/js?id=AW-784144131" />
