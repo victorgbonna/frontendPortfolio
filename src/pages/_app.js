@@ -16,8 +16,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
+      <Script id="convertful-api" src="https://app.convertful.com/Convertful.js?owner=73625" async/>
+
         {/* <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link> */}
-      </Head>
       <Script src="https://www.googletagmanager.com/gtag/js?id=AW-784144131" />
       <Script id="google-analytics">
         {`
@@ -45,7 +46,7 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-TM98X96286');
         `}
       </Script>
-      <Script id="convertful-api" src="https://app.convertful.com/Convertful.js?owner=73625" async/>
+      </Head>
 
       
       {/* <!-- Google tag (gtag.js) -->
