@@ -39,7 +39,7 @@ const blogs=[
                 {blogs.map((blog,index)=>
                 <Link href={blog.codeLink} key={index}>
                     <a target='blank' className={`
-                    wow ${((index+1) % 3)==0?' fadeInRight':((index+1) % 3)==1?' fadeInLeft':' zoomIn'} 
+                    wowb ${((index+1) % 3)==0?' fadeInRight':((index+1) % 3)==1?' fadeInLeft':' zoomIn'} 
                     w-80 card2`}>
                         <img src={blog.coverPhoto}  alt="not show" 
                         className='front tablet:static h-60 w-full

@@ -53,7 +53,7 @@ export default function Project(){
                 {projects.map((project,index)=>
                 // <>
                     <article key={index} style={{borderRadius:8}}  className={`
-                    wow
+                    wowb
                     ${((index+1) % 3)==0?' fadeInRight':((index+1) % 3)==1?' fadeInLeft':' zoomIn'}
                     panels w-full h-80 tablet:h-64 
                      shadow-lg 
