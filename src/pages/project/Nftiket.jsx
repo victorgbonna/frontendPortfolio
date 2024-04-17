@@ -84,6 +84,21 @@ export default function Project2() {
               - Library for magic link authentication.
               </li>
               <li>
+              <Link href={'https://www.npmjs.com/package/magic-sdk'}>
+                <a className="text-blue-500">Moralis Js</a></Link>
+              - Alternate library to web3js that provides more simplicity.
+              </li>
+              <li>
+              <Link href={'https://www.npmjs.com/package/magic-sdk'}>
+                <a className="text-blue-500">Flow Technology</a></Link>
+              - The blockchain tool to enable potential buyers make NFT copies of a ticket.
+              </li>
+              <li>
+              <Link href={'https://www.npmjs.com/package/magic-sdk'}>
+                <a className="text-blue-500">Vella finance</a></Link>
+              - The payment platform that enables payment of tickets both locally and globally.
+              </li>
+              <li>
               <Link href={'https://www.npmjs.com/package/axios'}>
                 <a className="text-blue-500">Axios</a></Link>
                   - alternative to fetch: for making API calls.
